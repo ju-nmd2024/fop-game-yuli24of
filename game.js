@@ -177,7 +177,7 @@ pop();
     yVelocity -= thrust;
 }
 
-  // Horizontal movement controls from Chat GPT 181-187
+  // Horizontal movement controls from Chat GPT 181-187 https://chatgpt.com/share/6740c383-fa38-8005-9e17-dd7073af3d5b
   if (keyIsDown(LEFT_ARROW)) {
     xVelocity = -speed;
   } else if (keyIsDown(RIGHT_ARROW)) {
@@ -193,7 +193,7 @@ pop();
   // Spider
   emoji(x, y, 1);
 
-  // Check for landing taken from ChatGPT 194-204
+  // Check for landing taken from ChatGPT 194-204 https://chatgpt.com/share/6740c383-fa38-8005-9e17-dd7073af3d5b
   if (y >= groundLevel - 10) { 
     if (x > landingZoneX && x < landingZoneX + landingZoneWidth && Math.abs(yVelocity) <= safeLandingSpeed) {
       landedSafely = true;
